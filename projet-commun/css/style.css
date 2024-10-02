@@ -1,0 +1,229 @@
+
+body {
+ padding: 0;
+ margin: 0;
+ font-family: Arial, sans-serif;
+ background-color: #f4f4f4;
+
+}
+
+header {
+    background-color: #2570AB;
+    padding: 10px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    position: relative;
+    margin-right: 20px; /* Ajoute un espacement à droite pour chaque lien (ajustez selon vos besoins) */
+    font-weight: bold;
+}
+
+header nav a:hover {
+    border-bottom: 2px solid white; 
+    
+}
+
+.logo-afci img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+
+
+.header {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.header h1 {
+    color: #333;
+}
+
+.header form {
+    margin-top: 1rem;
+}
+
+.header input[type="search"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 40%;
+}
+
+.header button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.header button:hover {
+    background-color: #0056b3;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
+.title-portfolio {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.title-portfolio h1 {
+    color: #333;
+}
+
+.profil-group {
+    display: flex;
+    flex-wrap: wrap; /* Permet de passer à la ligne lorsque nécessaire */
+    justify-content: center;
+    gap: 20px; /* Espace entre chaque profil */
+    padding: 0 1rem;
+}
+
+.profil1 {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1.5rem;
+    transition: transform 0.3s;
+    width: calc(12% - 20px); /* 12% de largeur moins l'espace de 20px de gap */
+    /* Ajustement pour être plus précis : pour 6 profils par ligne */
+}
+
+.profil1 img {
+    width: 80%;
+    height: auto;
+    border-radius: 50%; /* Pour rendre les images rondes */
+}
+
+.profil1 h2 {
+    margin: 1rem 0;
+    color: #333;
+}
+
+.profil1 p {
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.profil1 a {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.profil1 a:hover {
+    background-color: #0056b3;
+}
+
+.profil1:hover {
+    transform: translateY(-5px);
+}
+
+/* Media Queries pour rendre la page réactive */
+@media (max-width: 1200px) {
+    .profil1 {
+        width: calc(14% - 20px); /* Cinq profils par ligne sur grand écran */
+    }
+}
+
+@media (max-width: 900px) {
+    .profil1 {
+        width: calc(20% - 20px); /* Trois profils par ligne sur tablette */
+    }
+}
+
+@media (max-width: 600px) {
+    .profil1 {
+        width: calc(28% - 20px); /* Deux profil par ligne sur mobile */
+    }
+}
+
+
+.position-suggestions {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#suggestions {
+    display: none; /* Cache la div par défaut */
+    font-size: 18px;
+    max-width: 400px;
+    max-height: 150px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+#suggestions div {
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#suggestions div:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+#suggestions div:last-child {
+    border-bottom: none;
+}
+
+
+
+
+footer {
+    background-color: #226AA3;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {     
+    border-bottom: 2px solid white; 
+}
